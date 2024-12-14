@@ -25,6 +25,7 @@ metawiki = pywikibot.Site('meta', 'meta')
 
 def globalallusers(site, group):
     """
+
     :param site: The site to get our data from.
     :type site: pywikibot.site.APISite
     :param group: The group to get.
@@ -37,7 +38,6 @@ def globalallusers(site, group):
     if group:
         agugen.request['agugroup'] = group
     return agugen
-
 
 def sortkeys(key: str) -> str:
     """
@@ -65,7 +65,7 @@ def sortkeys(key: str) -> str:
         "steward": "S"
     }
     return sortkeyDict[key]
-
+    
 
 combinedJsDataPage = pywikibot.Page(site, "User:JJPMaster (bot)/markAdmins-Data.js")
 combinedJsonDataPage = pywikibot.Page(site, "User:JJPMaster (bot)/markAdmins-Data.json")
